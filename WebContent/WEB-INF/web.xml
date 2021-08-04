@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Cadastro_Oficinas</display-name>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>CadastroOficinaController</display-name>
+    <servlet-name>CadastroOficinaController</servlet-name>
+    <servlet-class>br.com.cadastrooficina.controller.CadastroOficinaController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CadastroOficinaController</servlet-name>
+    <url-pattern>/CadastroOficinaController</url-pattern>
+  </servlet-mapping>
+  <!-- <filter>
+	<filter-name>UsuarioAutorizado</filter-name>  
+  	<filter-class>br.com.siscom.controller.UsuarioAutorizadoFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>UsuarioAutorizado</filter-name>
+  	<url-pattern>*</url-pattern>
+  </filter-mapping>-->
+</web-app>
